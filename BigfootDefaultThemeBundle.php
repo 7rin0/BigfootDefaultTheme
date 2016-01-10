@@ -7,8 +7,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 /**
  * Class BigfootDefaultThemeBundle
  *
- * @Author S.huot s.huot@c2is.fr
- * @package Bigfoot\Bundle\ContentBundle
+ * @package Bigfoot\Theme\DefaultThemeBundle
  */
 class BigfootDefaultThemeBundle extends Bundle
 {

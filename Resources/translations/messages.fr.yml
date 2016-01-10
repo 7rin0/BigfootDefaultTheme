@@ -11,4 +11,4 @@ bigfoot:
                 label: 'Contactez le support'
         home:
             title: 'Bienvenue sur votre interface d''administration'
-        version: 'Bigfoot v%version% ©C2iS'
+        version: 'Bigfoot v%version%'

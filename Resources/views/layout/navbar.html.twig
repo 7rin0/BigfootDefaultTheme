@@ -28,7 +28,7 @@
                                 <a data-toggle="dropdown" href="#" class="dropdown-toggle align-right">
                                     <i class="icon-user"></i>
                                     <span class="user-info align-left">
-                                        {{ 'Welcome' }}, {{ app.user.fullName }}
+                                        {{ 'Welcome' }}, {{ app.user.fullName|default('admin') }}
                                     </span>
                                     <i class="icon-caret-down align-center icon-on-right"></i>
                                 </a>
