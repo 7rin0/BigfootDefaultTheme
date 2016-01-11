@@ -7,13 +7,13 @@
         <div class="locales-container"></div>
     </div>
     <div class="modal-body">
-        <form action="{{ form_action }}" method="{{ form_method }}" class="form-horizontal" {{ form_enctype(form) }}>
+        {{ form_start(form, {'method': form_method, 'action': form_action, 'class': 'form-horizontal' } ) }}
             <div class="row">
                 {% block form %}
                     {{ form_rest(form) }}
                 {% endblock %}
             </div>
-        </form>
+        {{ form_end(form) }}
     </div>
     <div class="modal-footer">
         <button type="button" data-dismiss="modal" class="btn">Close</button>
