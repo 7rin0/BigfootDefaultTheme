@@ -636,7 +636,6 @@
       dialog.find(".modal-footer").html(buttonStr);
     }
 
-
     /**
      * Bootstrap event listeners; used handle extra
      * setup & teardown required after the underlying
@@ -787,7 +786,6 @@
 
     return exports;
   };
-
 
   /**
    * standard locales. Please add more according to ISO 639-1 standard. Multiple language variants are

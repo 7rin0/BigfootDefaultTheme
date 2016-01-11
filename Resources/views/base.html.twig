@@ -5,7 +5,7 @@
         <title>{{ bigfoot_theme.title|default('Bigfoot')|trans }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
-        <meta name="author" content="{{ bigfoot_theme.provided_by|default('provided by sf3 - Agence digitale')|trans }}">
+        <meta name="author" content="{{ bigfoot_theme.provided_by|default('')|trans }}">
 
         {% block stylesheets %}
             {% stylesheets

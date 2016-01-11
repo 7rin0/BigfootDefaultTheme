@@ -467,7 +467,6 @@ body.modal-open,
     overflow: hidden;
 }
 
-
 /* add a scroll bar to stop page from jerking around */
 .modal-open.page-overflow .page-container,
 .modal-open.page-overflow .page-container .navbar-fixed-top,
@@ -482,7 +481,6 @@ body.modal-open,
         overflow-y: visible;
     }
 }
-
 
 .modal-scrollable {
     position: fixed;
@@ -690,7 +688,6 @@ body {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
-
 
 /*
  * Sidebar

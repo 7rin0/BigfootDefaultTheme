@@ -343,7 +343,6 @@ $.fn.ajaxSubmit = function(options) {
         }
         io = $io[0];
 
-
         xhr = { // mock object
             aborted: 0,
             responseText: null,
@@ -820,7 +819,6 @@ function captureSubmittingElement(e) {
     // clear form vars
     setTimeout(function() { form.clk = form.clk_x = form.clk_y = null; }, 100);
 }
-
 
 // ajaxFormUnbind unbinds the event handlers that were bound by ajaxForm
 $.fn.ajaxFormUnbind = function() {
@@ -2405,7 +2403,6 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 		}
 	}
 
-
 	/* MODAL MANAGER PLUGIN DEFINITION
 	* ======================= */
 
@@ -2453,7 +2450,6 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
-
 
 !function ($) {
 
@@ -2725,10 +2721,8 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 				}, 0);
 			}
 
-
 			this.focus();
 		},
-
 
 		destroy: function () {
 			var e = $.Event('destroy');
@@ -2754,7 +2748,6 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 			this.$element.trigger('destroyed');
 		}
 	};
-
 
 	/* MODAL PLUGIN DEFINITION
 	* ======================= */
@@ -2791,7 +2784,6 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 	};
 
 	$.fn.modal.Constructor = Modal;
-
 
 	/* MODAL DATA-API
 	* ============== */
