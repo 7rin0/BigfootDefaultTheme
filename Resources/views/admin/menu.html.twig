@@ -16,7 +16,11 @@
 {% endblock %}
 
 {% block spanElement %}
-    <a href="{{ item.uri }}" {{ _self.attributes(item.linkAttributes) }}>
+    {% set html_properties = '' %}
+    {% for key,value in item.linkAttributes %}
+        {% set html_properties = html_properties ~ ' ' ~ key ~ '="' ~ value %}
+    {% endfor %}
+    <a href="{{ item.uri }}" {{ html_properties }}>
         <i class="icon-{{ item.linkAttributes['icon']|default('list-alt') }}"></i>
         <span class="menu-text">{{ block('label')|trans }}</span> {% if item.children %}<b class="arrow icon-angle-down"></b>{% endif %}
     </a>
