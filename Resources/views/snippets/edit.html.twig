@@ -1,6 +1,6 @@
 <tr class="well portfolio-edit-form-{{ id }}">
     <td colspan="9">
-        <form action="{{ path('portfolio_edit', {id: id}) }}" class="portfolio-edit-form form-horizontal" method="post" {{ form_enctype(form) }}>
+        {{ form_start(form, {'method': 'post', 'action': path('portfolio_edit', {id: id}), 'attr' : {'class' : 'portfolio-edit-form form-horizontal'}}) }}
             <div class="row">
                 <div class="col-sm-12 portfolio-media-edit">
                     <div id="bigfoot_media_tags">{{ form_widget(form.tags) }}</div>
@@ -13,6 +13,6 @@
             {{ form_errors(form) }}
             <hr/>
             <button type="submit" class="btn btn-success pull-right">{{ "Save" | trans }}</button><br/>
-        </form>
+        {{ form_end(form) }}
     </td>
 </tr>
