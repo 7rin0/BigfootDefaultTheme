@@ -35,7 +35,7 @@
                 basePath              = "{{ app.request.basePath|e('js') }}",
                 tagsPath              = "{{ path('admin_tag_get')|e('js') }}",
                 defaultLocale         = "{{ defaultLocale|e('js') }}",
-                locales               = {{ bigfoot_locale_flags() }};
+                locales               = "{{ bigfoot_locale_flags() }}";
 
             window.CKEDITOR_BASEPATH = "{{ app.request.getSchemeAndHttpHost() }}/bundles/bigfootdefaulttheme/vendor/ckeditor/";
         </script>
