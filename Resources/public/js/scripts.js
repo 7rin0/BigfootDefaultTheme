@@ -2890,6 +2890,13 @@ $(function () {
     });
 
     /**
+     * General Toogle
+     */
+    $('a.dropdown-toggle').on('click', function (event) {
+        $(this).siblings('ul.dropdown-menu, ul.submenu').toggle(300);
+    });
+
+    /**
      * Delete collection item
      */
     $('body').on('click', 'a.deleteCollectionItem', function (event) {
