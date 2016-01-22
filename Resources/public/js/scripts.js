@@ -2873,6 +2873,7 @@ $(function () {
      * Sidebar toggle
      */
     $('.sidebar .active > .submenu').toggle();
+    $('ul.submenu li.active').closest('ul.submenu').toggle(300);
 
     $('.sidebar li.parent a.dropdown-toggle').on('click', function (event) {
         event.preventDefault();

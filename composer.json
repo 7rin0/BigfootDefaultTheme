@@ -15,11 +15,7 @@
         }
     ],
     "require": {
-<<<<<<< HEAD
         "bigfoot/core-bundle": "~4.0"
-=======
-        "bigfoot/core-bundle": ">=3.0.0"
->>>>>>> 69fa4b23967d5c3f22a24f1941e04cbdd2fdac42
     },
     "autoload": {
         "psr-0": { "Bigfoot\\Theme\\DefaultThemeBundle": "" }
@@ -28,7 +24,7 @@
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
-            "dev-master": "4.0.x-dev",
+            "dev-master": "4.0.x-dev"
         }
     }
 }
