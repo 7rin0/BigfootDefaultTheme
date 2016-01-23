@@ -14,7 +14,7 @@
                 <table id="list" class="table table-striped ">
                     <tbody>
                         {% for media in selectedMedias %}
-                        {% include 'BigfootAceThemeBundle:snippets:table_line.html.twig' with {'line': media, 'used': true} %}
+                        {% include 'BigfootDefaultThemeBundle:snippets:table_line.html.twig' with {'line': media, 'used': true} %}
                         {% endfor %}
                     </tbody>
                 </table>
@@ -38,7 +38,7 @@
                         </div>
                     </form>
                 </div>
-                {% include 'BigfootAceThemeBundle:snippets:table.html.twig' with {'allMedias': allMedias, 'mediaIds': mediaIds} %}
+                {% include 'BigfootDefaultThemeBundle:snippets:table.html.twig' with {'allMedias': allMedias, 'mediaIds': mediaIds} %}
             </div>
             <div class="tab-pane" id="upload">
                 <div class="ace-file-input ace-file-multiple">
