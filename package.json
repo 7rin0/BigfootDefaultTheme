@@ -1,6 +1,6 @@
 {
   "name": "DefaultThemeBundle",
-  "version": "2.2.0",
+  "version": "4.0",
   "description": "Bigfoot Administration Interface default theme",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/c2is/BigfootDefaultTheme.git"
+    "url": "https://github.com/7rin0/BigfootDefaultTheme.git"
   },
   "author": "g.manen@c2is.fr",
+  "contributors": [{
+    "name": "Luis SEVERINO",
+    "email": "lfs.severino@gmail.com"
+  }],
   "license": "ISC",
   "devDependencies": {
     "bower": "^1.3.12",
