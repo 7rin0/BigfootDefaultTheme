@@ -10,7 +10,6 @@ assetic:
         admin_js:
             inputs:
                 - 'bundles/bigfootdefaulttheme/js/scripts.js'
-                # - 'bundles/bigfootdefaulttheme/js/scripts.min.js'
                 - 'bundles/bigfootdefaulttheme/vendor/bootstrap.min.js'
                 - 'bundles/bigfootdefaulttheme/vendor/bootbox.js'
                 - '%kernel.root_dir%/../src/jms/twig-js/twig.js'
