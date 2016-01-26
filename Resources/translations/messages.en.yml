@@ -3,12 +3,12 @@ bigfoot:
         index:
             filter:
                 global:
-                    submit: 'Filter'
-                    clear: 'Clear Filters'
+                    submit: "Filter"
+                    clear: "Clear Filters"
     default_theme:
         assistance:
             link:
-                label: 'Contact our assistance team'
+                label: "Contact our assistance team"
         home:
-            title: 'Welcome on your administration interface'
-        version: 'Bigfoot v%version%'
+            title: "Welcome on your administration interface"
+        version: "Bigfoot v%version%"
