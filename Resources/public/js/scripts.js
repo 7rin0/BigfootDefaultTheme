@@ -2871,17 +2871,17 @@ $('document').ready(function ($) {
     /**
      * Sidebar toggle
      */
-    $('.sidebar .active > .submenu').toggle();
-    //$('ul.submenu li.active').closest('ul.submenu').toggle(300);
-    $('.sidebar li.parent a.dropdown-toggle').on('click', function (event) {
-        event.preventDefault();
-
-        $(this)
-            .closest('li')
-            //.addClass('open')
-            .find('.submenu:first')
-            .toggle(300);
-    });
+        //$('.sidebar .active > .submenu').toggle();
+    $('ul.submenu li.active').closest('ul.submenu').toggle(300);
+    //$('.sidebar li.parent a.dropdown-toggle').on('click', function (event) {
+    //    event.preventDefault();
+    //
+    //    $(this)
+    //        .closest('li')
+    //        //.addClass('open')
+    //        .find('.submenu:first')
+    //        .toggle(300);
+    //});
 
     /**
      * Logout Dropdown
