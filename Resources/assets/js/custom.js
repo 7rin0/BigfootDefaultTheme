@@ -1,4 +1,4 @@
-!function ($) {
+$('document').ready(function ($) {
 
     /**
      * Init functions
@@ -24,6 +24,14 @@
             .addClass('open')
             .find('.submenu:first')
             .toggle(300);
+    });
+
+    /**
+     * Logout Dropdown
+     */
+    $('.infos a.dropdown-toggle').on('click', function (event) {
+        event.preventDefault();
+        $(this).next('.dropdown-menu').toggle(300);
     });
 
     /**
@@ -145,7 +153,7 @@
         });
     });
 
-}(jQuery);
+});
 
 /**
  * Translatable fields

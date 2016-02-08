@@ -1151,7 +1151,7 @@ function log() {
 
 })(jQuery);
 
-(function($) {
+$('document').ready(function($) {
     if (!$.bigfoot) {
         $.bigfoot = new Object();
     };
@@ -1489,7 +1489,7 @@ function log() {
         this.data("bigfoot.portfolio");
     };
 
-})(jQuery);
+});
 
 /*!
 * Nestable jQuery Plugin - Copyright (c) 2012 David Bushell - http://dbushell.com/
@@ -2028,7 +2028,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
  * limitations under the License.
  * ========================================================== */
 
-!function ($) {
+(function ($) {
 
 	"use strict"; // jshint ;_;
 
@@ -2431,7 +2431,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 		$(document).off('show.bs.modal').off('hidden.bs.modal');
 	});
 
-}(jQuery);
+})(window.jQuery);
 
 /* ===========================================================
  * bootstrap-modal.js v2.2.4
@@ -2451,7 +2451,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
  * limitations under the License.
  * ========================================================== */
 
-!function ($) {
+(function ($) {
 
 	"use strict"; // jshint ;_;
 
@@ -2804,9 +2804,9 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 		});
 	});
 
-}(window.jQuery);
+})(window.jQuery);
 
-$(function() {
+(function($) {
 
     /*
      * Ajax modal
@@ -2831,7 +2831,8 @@ $(function() {
     /*
      * Spinner modal
      */
-    $.fn.modal.defaults.spinner = $.fn.modalmanager.defaults.spinner =
+    //$.fn.modal.defaults.spinner = $.fn.modalmanager.defaults.spinner =
+    $.fn.modalmanager.defaults.spinner =
         '<div class="loading-spinner" style="width: 200px; margin-left: -100px;">' +
             '<div class="progress progress-striped active">' +
                 '<div class="progress-bar" style="width: 100%;"></div>' +
@@ -2858,11 +2859,9 @@ $(function() {
 
         $this.text(text.join('\n\n').replace(/\t/g, '    '));
     });
+})(window.jQuery);
 
-});
-
-$(function () {
-
+$('document').ready(function ($) {
     /**
      * Init functions
      */
@@ -2873,28 +2872,23 @@ $(function () {
      * Sidebar toggle
      */
     $('.sidebar .active > .submenu').toggle();
-    $('ul.submenu li.active').closest('ul.submenu').toggle(300);
-
+    //$('ul.submenu li.active').closest('ul.submenu').toggle(300);
     $('.sidebar li.parent a.dropdown-toggle').on('click', function (event) {
         event.preventDefault();
 
-        if ($(this).closest('li').hasClass('parent')) {
-            $('.sidebar li').removeClass('open');
-            $('.submenu').hide();
-        }
-
         $(this)
             .closest('li')
-            .addClass('open')
+            //.addClass('open')
             .find('.submenu:first')
             .toggle(300);
     });
 
     /**
-     * General Toogle
+     * Logout Dropdown
      */
-    $('a.dropdown-toggle').on('click', function (event) {
-        $(this).siblings('ul.dropdown-menu, ul.submenu').toggle(300);
+    $('.infos a.dropdown-toggle').on('click', function (event) {
+        event.preventDefault();
+        $(this).next('.dropdown-menu').toggle(300);
     });
 
     /**
